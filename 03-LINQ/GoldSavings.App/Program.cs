@@ -1,4 +1,5 @@
 ﻿using GoldSavings.App.Model;
+using GoldSavings.App.Client;
 using GoldSavings.App.Services;
 namespace GoldSavings.App;
 
