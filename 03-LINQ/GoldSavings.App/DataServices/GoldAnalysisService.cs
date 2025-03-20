@@ -63,7 +63,7 @@ namespace GoldSavings.App.Services
         }
 
         public List<GoldPrice> secondTenPrices() {
-            return _goldPrices.OrderByDescending(gp => gp.Price).ToArray().Skip(10).Take(3).ToList();
+            return _goldPrices.OrderByDescending(gp => gp.Price).Skip(10).Take(3).ToList();
         }
 
         public List<GoldPrice> upperPrices(double threeshold) {
