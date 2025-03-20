@@ -133,9 +133,8 @@ class Program
             DateTime endDatetmp = new DateTime(year, 12, 31);
 
             List<GoldPrice> goldPricestmp = dataService.GetGoldPrices(startDatetmp, endDatetmp).GetAwaiter().GetResult();
-            GoldAnalysisService analysisServicetmp = new GoldAnalysisService(goldPricestmp);
 
-            top12eachyear.AddRange(analysisServicetmp.highestPricesWithDateMethod(12));
+            top12eachyear.AddRange(goldPricestmp);
         }
 
         GoldAnalysisService analysisService3 = new GoldAnalysisService(top12eachyear);
